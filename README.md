@@ -18,7 +18,7 @@ Our topic will be investigating growth in new population or new children born in
 | `Year` | The four-digit year of the birth (e.g., `2015`) | number | 
 | `countyBirths` | The calculated sum of births that occurred to mothers living in a county for a given month (if the sum was less than 9, the sum is listed as `NA` as per NCHS reporting guidelines). | number | 
 | `stateBirths` | The calculated sum of births that occurred to mothers living in a state for a given month (includes all birth counts, including those from counties with fewer than 9 births in a month). | number | 
-{Add your stuff here}
+
 
 ## Team Members
 
