@@ -10,19 +10,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 Our topic will be investigating growth in new population or new children born in different counties. We can use variables to determine the population demographic of USA states and couties, such as highest, lowest birthrate in terms of region, timeframe, GDP, crime rate, etc. We may also use math model to explore the relationship of different variables and birth rates. 
 
 ## Describe your dataset in about 150-200 words
-In our raw data we have 5 variables. 
-### State: 
-The state where the children' mother lives, and states are numbered in alphabetical order such that 01 = Alabama and 51 = Wyoming.
-### County: 
-The Counties are recorded as FIPS county code.
-### Month:
-The month which a birth happen. It is recorded as numbers. For example, Feb=2,Dec=12 
-### Year:
-The year which birth happen. It is also recorded as numbers. For example,1998.
-### CountyBirths:
-The calculated sum of births that occurred to mothers living in a county for a given month (if the sum was less than 9, the sum is listed as NA as per NCHS reporting guidelines)
-### StateBirths: 
-The calculated sum of births that occurred to mothers living in a state for a given month (includes all birth counts, including those from counties with fewer than 9 births in a month).
+The dataset tracks the number of monthly births at each county in U.S.. The Dataset is provided through both National Bureau for Economic Research(NBER)(1985-2002) and Centers for Disease Control and Prevention (CDC)(2003-2015). The dataset contain 6 variables including "State", "County", "Month", "Year", "countryBirths", "stateBirths" and in total 321,476 rows of corresponding data. The data is credit through two very reputable sources and it is also up to date as it is lastly modified in April. 5th, 2017. Data was collected in a timespan from Jan.1st,1985 to December 31,2015. The Dataset is being tracked with birthinfo. For privacy reasons, National Center for Health Statistics(NCHC) limits the geolocation information for datas after 2005. Data is available download on April 5th, 2017.   
 
 ## Team Members
 
