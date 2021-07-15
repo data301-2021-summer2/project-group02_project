@@ -14,9 +14,9 @@ The dataset tracks the number of monthly births at each county in U.S.. The Data
 
 ## Team Members
 
-- Person 1: Andrew Dai cs major
-- Person 2: Darren Dai MG Major
-- Person 3: Jimmy Hu EESC Major
+- Person 1: Andrew Dai, fourth year in CS major
+- Person 2: Darren Dai, fourth year in MG Major
+- Person 3: Jimmy Hu, fourth year in EESC Major
 
 ## References
 Datasets are from the link below:
