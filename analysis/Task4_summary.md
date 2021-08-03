@@ -4,8 +4,7 @@
 
 
 Andrew : 
-
-
+I focused on the percentage of state birth increase in the year of 1985, I found out there Arizona (State number 04) has the highest birth increase in that year.Also I noticed, in 1985 there is only 50 state number, there could be a data lost somewhere. Due to there is a state shows on bar chart had 0 birth increase. There could be a data lost. But since we have drop all the rows for Nah, there could be a mistake during data recording. 
 
 
 Jimmy 
