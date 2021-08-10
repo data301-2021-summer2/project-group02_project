@@ -10,5 +10,7 @@ def clean_data(path):
     data_clean = data_clean[data_clean['Year'] >= 1985]
     data_clean = data_clean[data_clean['Year']<=2015]
     return data_clean
-
+def load_process(){
+    
+}
 
