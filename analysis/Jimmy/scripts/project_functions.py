@@ -23,8 +23,28 @@ def clean_data(path):
         .loc[lambda x:x["Year"]>=1985]
         .loc[lambda x:x["Year"]<=2015]
         .drop(["County","countyBirths"],axis=1)
-    )
-    return df
+     )
+
+    df2=pd.DataFrame(columns=df.columns)
+    state_births_month={}
+    count=0
+    for i in df.index:
+        year=df["Year"][i]
+        month=df["Month"][i]
+        state=df["State"][i]
+        births=df["stateBirths"][i]
+
+        if state not in state_births_month.keys():
+            state_births_month[state]={}
+        if year not in state_births_month[state].keys():
+            state_births_month[state][year]={}
+        if month not in state_births_month[state][year].keys():
+            state_births_month[state][year][month]=births
+            df2.loc[count]=df.loc[i]
+            count=count+1
+    df2.to_csv("data_cleaned.csv")
+
+    return df2
 
 def load_and_process(path):
 
