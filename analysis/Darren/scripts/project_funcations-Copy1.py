@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 
-
+# cleaning
 def clean_data(path):
     df=(pd.read_csv(path,index_col=0)
         .rename(columns={"countyBirths": "cB"})
@@ -19,6 +19,7 @@ def clean_data(path):
     )
     return df
 
+# load and process
 def load_and_process(path):
     df=clean_data(path)
     state_births_month={}
@@ -28,3 +29,13 @@ def load_and_process(path):
         month=df["Month"][i]
         state=df["State"][i]
         births=df["stateBirths"][i]
+        
+
+        
+# wrangle data
+def load_USA_data(path):
+    df = pd.read_csv(path, index_col=0)
+    data_filter = df.loc[:, ['Year', 'countyBirths']]
+    sum_data = data_filter.groupby('Year').sum()
+    print(sum_data)
+    return sum_data
