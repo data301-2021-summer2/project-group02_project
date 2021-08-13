@@ -25,7 +25,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='modifydata2015' name='textscan.1nl2jra0kpdpz01436iye1r0gdop'>
-            <connection class='textscan' directory='C:/Users/iamda/Documents/GitHub/project-group02_project/analysis/Andrew' filename='modifydata2015.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/Jimmy/Desktop/Data301/project-group02_project/images/Jimmy_Tableau' filename='modifydata2015.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1nl2jra0kpdpz01436iye1r0gdop' name='modifydata2015.csv' table='[modifydata2015#csv]' type='table'>
@@ -205,7 +205,7 @@
       <simple-id uuid='{133D2C6E-81D6-4DC9-8AD5-3010CC2C0939}' />
     </worksheet>
   </worksheets>
-  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+  <windows source-height='37'>
     <window class='worksheet' maximized='true' name='Sheet 1'>
       <cards>
         <edge name='left'>
