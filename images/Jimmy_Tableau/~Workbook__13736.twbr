@@ -587,7 +587,7 @@
       </cards>
       <simple-id uuid='{4959C7E2-3699-4557-88A6-FB3586ACEF62}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 2'>
+    <window class='worksheet' name='Sheet 2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -633,22 +633,7 @@
       </cards>
       <simple-id uuid='{BB3B1B3E-F5F4-427A-B7F0-0A46A48B493E}' />
     </window>
-    <window class='dashboard' name='Dashboard 1'>
-      <viewpoints>
-        <viewpoint name='Sheet 1'>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='Sheet 2'>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='Sheet 3'>
-          <zoom type='entire-view' />
-        </viewpoint>
-      </viewpoints>
-      <active id='3' />
-      <simple-id uuid='{579B0A15-0A8C-4A01-BB86-C4F2F1A9D2A1}' />
-    </window>
-    <window class='worksheet' name='Sheet 4'>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -670,6 +655,21 @@
         </edge>
       </cards>
       <simple-id uuid='{9A6C84B0-C017-49B1-AC74-1C0C0450E573}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{579B0A15-0A8C-4A01-BB86-C4F2F1A9D2A1}' />
     </window>
   </windows>
 </workbook>
