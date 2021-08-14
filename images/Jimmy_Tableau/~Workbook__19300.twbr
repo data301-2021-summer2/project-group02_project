@@ -1,0 +1,1455 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='data_cleaned' inline='true' name='federated.0v8xarr1trszq712w3zk50iqjprk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_cleaned' name='textscan.1c8crux1yda82w13seolp0tmqkvp'>
+            <connection class='textscan' directory='C:/Users/Jimmy/Desktop/Data301/project-group02_project/analysis/Jimmy' filename='data_cleaned.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='data_cleaned (2)' name='textscan.1oyhqaf0m5cnxt1399nys1qacvze'>
+            <connection class='textscan' directory='C:/Users/Jimmy/Desktop/Data301/project-group02_project/analysis/Jimmy' filename='data_cleaned.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='modifydata1985' name='textscan.0jku9xk0bkeyeu13c7w3o18z06t1'>
+            <connection class='textscan' directory='C:/Users/Jimmy/Desktop/Data301/project-group02_project/images/Jimmy_Tableau' filename='modifydata1985.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='modifydata2015' name='textscan.15hi60q1tf7bjn1bqms9908wgu14'>
+            <connection class='textscan' directory='C:/Users/Jimmy/Desktop/Data301/project-group02_project/images/Jimmy_Tableau' filename='modifydata2015.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1oyhqaf0m5cnxt1399nys1qacvze' name='data_cleaned.csv' table='[data_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='State' ordinal='1' />
+            <column datatype='integer' name='Month' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='integer' name='stateBirths' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1oyhqaf0m5cnxt1399nys1qacvze' name='data_cleaned.csv' table='[data_cleaned#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='State' ordinal='1' />
+              <column datatype='integer' name='Month' ordinal='2' />
+              <column datatype='integer' name='Year' ordinal='3' />
+              <column datatype='integer' name='stateBirths' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15hi60q1tf7bjn1bqms9908wgu14' name='modifydata1985.csv' table='[modifydata1985#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='State' ordinal='1' />
+              <column datatype='string' name='percenatge' ordinal='2' />
+              <column datatype='real' name='Statebirth' ordinal='3' />
+              <column datatype='real' name='percentage' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15hi60q1tf7bjn1bqms9908wgu14' name='modifydata2015.csv' table='[modifydata2015#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='State' ordinal='1' />
+              <column datatype='string' name='percenatge' ordinal='2' />
+              <column datatype='real' name='Statebirth' ordinal='3' />
+              <column datatype='real' name='percentage' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1 (modifydata1985.csv)]' value='[modifydata1985.csv].[F1]' />
+          <map key='[F1 (modifydata2015.csv)]' value='[modifydata2015.csv].[F1]' />
+          <map key='[F1]' value='[data_cleaned.csv].[F1]' />
+          <map key='[Month]' value='[data_cleaned.csv].[Month]' />
+          <map key='[State (modifydata1985.csv)]' value='[modifydata1985.csv].[State]' />
+          <map key='[State (modifydata2015.csv)]' value='[modifydata2015.csv].[State]' />
+          <map key='[State]' value='[data_cleaned.csv].[State]' />
+          <map key='[Statebirth (modifydata2015.csv)]' value='[modifydata2015.csv].[Statebirth]' />
+          <map key='[Statebirth]' value='[modifydata1985.csv].[Statebirth]' />
+          <map key='[Year]' value='[data_cleaned.csv].[Year]' />
+          <map key='[percenatge (modifydata2015.csv)]' value='[modifydata2015.csv].[percenatge]' />
+          <map key='[percenatge]' value='[modifydata1985.csv].[percenatge]' />
+          <map key='[percentage (modifydata2015.csv)]' value='[modifydata2015.csv].[percentage]' />
+          <map key='[percentage]' value='[modifydata1985.csv].[percentage]' />
+          <map key='[stateBirths]' value='[data_cleaned.csv].[stateBirths]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[modifydata1985.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[modifydata2015.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_cleaned.csv_DEE209E93EA54C4DBA0A83BEE37F8DEA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_cleaned.csv_DEE209E93EA54C4DBA0A83BEE37F8DEA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_cleaned.csv_DEE209E93EA54C4DBA0A83BEE37F8DEA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_cleaned.csv_DEE209E93EA54C4DBA0A83BEE37F8DEA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stateBirths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stateBirths]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>stateBirths</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_cleaned.csv_DEE209E93EA54C4DBA0A83BEE37F8DEA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (modifydata1985.csv)]</local-name>
+            <parent-name>[modifydata1985.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata1985.csv_4F40582F398E4CC09BFF5FA0DC3366B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State (modifydata1985.csv)]</local-name>
+            <parent-name>[modifydata1985.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata1985.csv_4F40582F398E4CC09BFF5FA0DC3366B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percenatge</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[percenatge]</local-name>
+            <parent-name>[modifydata1985.csv]</parent-name>
+            <remote-alias>percenatge</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata1985.csv_4F40582F398E4CC09BFF5FA0DC3366B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Statebirth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Statebirth]</local-name>
+            <parent-name>[modifydata1985.csv]</parent-name>
+            <remote-alias>Statebirth</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata1985.csv_4F40582F398E4CC09BFF5FA0DC3366B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage]</local-name>
+            <parent-name>[modifydata1985.csv]</parent-name>
+            <remote-alias>percentage</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata1985.csv_4F40582F398E4CC09BFF5FA0DC3366B3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (modifydata2015.csv)]</local-name>
+            <parent-name>[modifydata2015.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata2015.csv_8100217AD2BC4F42ACB497FDE261567D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State (modifydata2015.csv)]</local-name>
+            <parent-name>[modifydata2015.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata2015.csv_8100217AD2BC4F42ACB497FDE261567D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percenatge</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[percenatge (modifydata2015.csv)]</local-name>
+            <parent-name>[modifydata2015.csv]</parent-name>
+            <remote-alias>percenatge</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata2015.csv_8100217AD2BC4F42ACB497FDE261567D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Statebirth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Statebirth (modifydata2015.csv)]</local-name>
+            <parent-name>[modifydata2015.csv]</parent-name>
+            <remote-alias>Statebirth</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata2015.csv_8100217AD2BC4F42ACB497FDE261567D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage (modifydata2015.csv)]</local-name>
+            <parent-name>[modifydata2015.csv]</parent-name>
+            <remote-alias>percentage</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[modifydata2015.csv_8100217AD2BC4F42ACB497FDE261567D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[State (modifydata1985.csv)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[State (modifydata2015.csv)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[State]' role='dimension' type='ordinal' />
+      <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[data_cleaned.csv_DEE209E93EA54C4DBA0A83BEE37F8DEA]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='modifydata1985.csv' datatype='table' name='[__tableau_internal_object_id__].[modifydata1985.csv_4F40582F398E4CC09BFF5FA0DC3366B3]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='modifydata2015.csv' datatype='table' name='[__tableau_internal_object_id__].[modifydata2015.csv_8100217AD2BC4F42ACB497FDE261567D]' role='measure' type='quantitative' />
+      <column caption='Percenatge (Modifydata2015.Csv)' datatype='string' name='[percenatge (modifydata2015.csv)]' role='dimension' type='nominal' />
+      <column caption='Percenatge' datatype='string' name='[percenatge]' role='dimension' type='nominal' />
+      <column caption='Percentage (Modifydata2015.Csv)' datatype='real' name='[percentage (modifydata2015.csv)]' role='measure' type='quantitative' />
+      <column caption='Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+      <column caption='State Births' datatype='integer' name='[stateBirths]' role='measure' type='quantitative' />
+      <column-instance column='[State (modifydata1985.csv)]' derivation='None' name='[none:State (modifydata1985.csv):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[State (modifydata2015.csv)]' derivation='None' name='[none:State (modifydata2015.csv):ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:State (modifydata2015.csv):ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>41</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>45</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>33</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>53</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>50</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>46</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>39</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>42</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>37</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>47</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>34</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>54</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>35</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>55</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>38</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>40</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>51</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>36</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>56</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>32</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>52</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>24</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>44</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:State (modifydata1985.csv):ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>41</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>45</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>33</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>50</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>46</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>39</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>42</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>37</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>47</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>34</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>35</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>38</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>40</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>51</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>36</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>32</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>24</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>44</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data_cleaned.csv' id='data_cleaned.csv_DEE209E93EA54C4DBA0A83BEE37F8DEA'>
+            <properties context=''>
+              <relation connection='textscan.1oyhqaf0m5cnxt1399nys1qacvze' name='data_cleaned.csv' table='[data_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='State' ordinal='1' />
+                  <column datatype='integer' name='Month' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                  <column datatype='integer' name='stateBirths' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='modifydata1985.csv' id='modifydata1985.csv_4F40582F398E4CC09BFF5FA0DC3366B3'>
+            <properties context=''>
+              <relation connection='textscan.15hi60q1tf7bjn1bqms9908wgu14' name='modifydata1985.csv' table='[modifydata1985#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='State' ordinal='1' />
+                  <column datatype='string' name='percenatge' ordinal='2' />
+                  <column datatype='real' name='Statebirth' ordinal='3' />
+                  <column datatype='real' name='percentage' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='modifydata2015.csv' id='modifydata2015.csv_8100217AD2BC4F42ACB497FDE261567D'>
+            <properties context=''>
+              <relation connection='textscan.15hi60q1tf7bjn1bqms9908wgu14' name='modifydata2015.csv' table='[modifydata2015#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='State' ordinal='1' />
+                  <column datatype='string' name='percenatge' ordinal='2' />
+                  <column datatype='real' name='Statebirth' ordinal='3' />
+                  <column datatype='real' name='percentage' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[F1]' />
+              <expression op='[F1 (modifydata1985.csv)]' />
+            </expression>
+            <first-end-point object-id='data_cleaned.csv_DEE209E93EA54C4DBA0A83BEE37F8DEA' />
+            <second-end-point object-id='modifydata1985.csv_4F40582F398E4CC09BFF5FA0DC3366B3' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[F1 (modifydata1985.csv)]' />
+              <expression op='[F1 (modifydata2015.csv)]' />
+            </expression>
+            <first-end-point object-id='modifydata1985.csv_4F40582F398E4CC09BFF5FA0DC3366B3' />
+            <second-end-point object-id='modifydata2015.csv_8100217AD2BC4F42ACB497FDE261567D' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Birth of U.S. from 1985 to 2015</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.0v8xarr1trszq712w3zk50iqjprk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v8xarr1trszq712w3zk50iqjprk'>
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column caption='State Births' datatype='integer' name='[stateBirths]' role='measure' type='quantitative' />
+            <column-instance column='[stateBirths]' derivation='Sum' name='[sum:stateBirths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Year:qk]' included-values='in-range' />
+          <filter class='quantitative' column='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Year:qk]</column>
+            <column>[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' field-type='quantitative' max='4538413' min='3000000' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' scope='rows' value='Total Count of State Births ' />
+            <format attr='title' class='0' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Year:qk]' scope='cols' value='Year' />
+            <format attr='auto-subtitle' class='0' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Year:qk]' scope='cols' value='false' />
+            <format attr='subtitle' class='0' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Year:qk]' scope='cols' value='1985-2015' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' value='Sum of State Births by Month'>
+              <formatted-text>
+                <run>Sum of State Births by Month</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]</rows>
+        <cols>[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{ED26A627-8520-4BFF-8FAF-36E263BFFBBB}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total birth count seperated by Month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.0v8xarr1trszq712w3zk50iqjprk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v8xarr1trszq712w3zk50iqjprk'>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:qk]' pivot='key' type='quantitative' />
+            <column caption='State Births' datatype='integer' name='[stateBirths]' role='measure' type='quantitative' />
+            <column-instance column='[stateBirths]' derivation='Sum' name='[sum:stateBirths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Month:qk]' included-values='in-range' />
+          <filter class='quantitative' column='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' included-values='in-range'>
+            <min>9401866</min>
+            <max>11026040</max>
+          </filter>
+          <slices>
+            <column>[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Month:qk]</column>
+            <column>[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' field-type='quantitative' max='11593610' min='9000000' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' scope='rows' value='Total Count of State Births' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+          </pane>
+        </panes>
+        <rows>[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]</rows>
+        <cols>[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Month:qk]</cols>
+      </table>
+      <simple-id uuid='{F7E6A095-CC48-4831-B4A9-53EDCED584EC}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>States Birth among all different States</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.0v8xarr1trszq712w3zk50iqjprk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v8xarr1trszq712w3zk50iqjprk'>
+            <column aggregation='Sum' datatype='integer' name='[State]' role='dimension' type='ordinal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:ok]' pivot='key' type='ordinal' />
+            <column caption='State Births' datatype='integer' name='[stateBirths]' role='measure' type='quantitative' />
+            <column-instance column='[stateBirths]' derivation='Sum' name='[sum:stateBirths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State:ok]'>
+            <groupfilter function='level-members' level='[none:State:ok]' />
+          </filter>
+          <computed-sort column='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State:ok]' direction='DESC' using='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' />
+          <slices>
+            <column>[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' scope='rows' value='Total Count of State Births' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]</rows>
+        <cols>[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State:ok]</cols>
+      </table>
+      <simple-id uuid='{BC2A655B-D648-46CE-98DE-48158CDA7FEC}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>U.S. State Birth of 1985 in Pie Chart</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.0v8xarr1trszq712w3zk50iqjprk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v8xarr1trszq712w3zk50iqjprk'>
+            <column aggregation='Sum' datatype='integer' name='[State (modifydata1985.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[State (modifydata1985.csv)]' derivation='None' name='[none:State (modifydata1985.csv):ok]' pivot='key' type='ordinal' />
+            <column caption='Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+            <column-instance column='[percentage]' derivation='Sum' name='[sum:percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State (modifydata1985.csv):ok]' direction='ASC' using='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='208' />
+            <format attr='cell-h' value='208' />
+            <format attr='cell' value='26' />
+            <format attr='cell-q' value='130' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State (modifydata1985.csv):ok]' value='State '>
+              <formatted-text>
+                <run>State </run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State (modifydata1985.csv):ok]' />
+              <wedge-size column='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage:qk]' />
+              <size column='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C8E103C7-8CA2-4827-91DD-F102E149C6C4}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>U.S. State Birth of 2015 in Pie Chart</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.0v8xarr1trszq712w3zk50iqjprk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v8xarr1trszq712w3zk50iqjprk'>
+            <column aggregation='Sum' datatype='integer' name='[State (modifydata2015.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[State (modifydata2015.csv)]' derivation='None' name='[none:State (modifydata2015.csv):ok]' pivot='key' type='ordinal' />
+            <column caption='Percentage (Modifydata2015.Csv)' datatype='real' name='[percentage (modifydata2015.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[percentage (modifydata2015.csv)]' derivation='Sum' name='[sum:percentage (modifydata2015.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State (modifydata2015.csv):ok]' direction='ASC' using='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage (modifydata2015.csv):qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='208' />
+            <format attr='cell-h' value='208' />
+            <format attr='cell' value='26' />
+            <format attr='cell-q' value='130' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State (modifydata2015.csv):ok]' />
+              <wedge-size column='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage (modifydata2015.csv):qk]' />
+              <size column='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage (modifydata2015.csv):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{655095F7-2F1A-42EC-83D4-142CE57DF3F1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='data_cleaned' name='federated.0v8xarr1trszq712w3zk50iqjprk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0v8xarr1trszq712w3zk50iqjprk'>
+        <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+        <column aggregation='Sum' datatype='integer' name='[State]' role='dimension' type='ordinal' />
+        <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Month]' derivation='None' name='[none:Month:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[State]' derivation='None' name='[none:State:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+        <column caption='State Births' datatype='integer' name='[stateBirths]' role='measure' type='quantitative' />
+        <column-instance column='[stateBirths]' derivation='Sum' name='[sum:stateBirths:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98726' id='30' param='horz' type-v2='layout-flow' w='98938' x='531' y='637'>
+            <zone h='98726' id='8' type-v2='layout-basic' w='98938' x='531' y='637'>
+              <zone h='24681' id='5' name='Sheet 2' w='49466' x='531' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='5' />
+                </zone-style>
+              </zone>
+              <zone h='24682' id='6' name='Sheet 3' w='49466' x='531' y='74681'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='5' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='24302' id='7' type-v2='text' w='49473' x='49996' y='637'>
+                <formatted-text>
+                  <run fontsize='14'>Group02- U.S. New Births from 1985-2015</run>
+                  <run>Æ&#10;</run>
+                  <run fontsize='14'>Research Question:  Determine the Highest States of Birth Count of U.S. from 1985 to 2015; how the US new births trended from 1985-2015 and how the new births compared in each month over the 30 years;US state birth percertage distrubition in 1985 and 2015</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontsize='14'>Presented by: Jimmy, Darren, Andrew</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4502' id='11' name='Sheet 2' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Month:qk]' type-v2='filter' values='database' w='24741' x='74728' y='45498'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5100' id='12' name='Sheet 2' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' type-v2='filter' values='database' w='49473' x='49996' y='40398'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4502' id='15' name='Sheet 1' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Year:qk]' type-v2='filter' values='database' w='24732' x='49996' y='45498'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11158' id='18' name='Sheet 3' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State:ok]' type-v2='filter' values='database' w='49473' x='49996' y='29240'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4301' id='21' name='Sheet 1' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' type-v2='filter' values='database' w='49473' x='49996' y='24939'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49363' id='3' name='Sheet 1' w='49472' x='49997' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24682' id='28' name='Sheet 5' w='32630' x='531' y='637'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24681' id='33' name='Sheet 6' w='32630' x='531' y='25319'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45976' id='31' name='Sheet 5' pane-specification-id='0' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State (modifydata1985.csv):ok]' type-v2='color' w='16835' x='33161' y='637'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3387' id='32' name='Sheet 5' pane-specification-id='0' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage:qk]' type-v2='size' w='16835' x='33161' y='46613'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98726' id='44' param='vert' type-v2='layout-flow' w='98938' x='531' y='637'>
+                <zone fixed-size='190' h='24682' id='28' is-fixed='true' name='Sheet 5' w='32632' x='531' y='637'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='45977' id='31' name='Sheet 5' pane-specification-id='0' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State (modifydata1985.csv):ok]' type-v2='color' w='16835' x='33163' y='637'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3386' id='32' name='Sheet 5' pane-specification-id='0' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage:qk]' type-v2='size' w='16835' x='33163' y='46614'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='24303' id='7' type-v2='text' w='49471' x='49998' y='637'>
+                  <formatted-text>
+                    <run fontsize='14'>Group02- U.S. New Births from 1985-2015</run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='14'>Research Question:  Determine the Highest States of Birth Count of U.S. from 1985 to 2015; how the US new births trended from 1985-2015 and how the new births compared in each month over the 30 years;US state birth percertage distrubition in 1985 and 2015</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontsize='14'>Presented by: Jimmy, Darren, Andrew</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='189' h='24681' id='33' is-fixed='true' name='Sheet 6' w='32632' x='531' y='25319'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5976' id='11' name='Sheet 2' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Month:qk]' type-v2='filter' values='database' w='24739' x='74730' y='44024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5976' id='12' name='Sheet 2' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' type-v2='filter' values='database' w='49471' x='49998' y='38048'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='187' h='24681' id='5' is-fixed='true' name='Sheet 2' w='49468' x='531' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5976' id='15' name='Sheet 1' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:Year:qk]' type-v2='filter' values='database' w='24732' x='49998' y='44024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4301' id='21' name='Sheet 1' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:stateBirths:qk]' type-v2='filter' values='database' w='49471' x='49998' y='24940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49363' id='3' is-fixed='true' name='Sheet 1' w='49470' x='49999' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8807' id='18' mode='checkdropdown' name='Sheet 3' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State:ok]' type-v2='filter' values='database' w='49471' x='49998' y='29241'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24682' id='6' is-fixed='true' name='Sheet 3' w='49468' x='531' y='74681'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{734B9F20-0E44-4E6E-B81C-EF62055DFFAC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4959C7E2-3699-4557-88A6-FB3586ACEF62}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AD67C863-B535-45FA-9478-7AA2FC5B0751}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB3B1B3E-F5F4-427A-B7F0-0A46A48B493E}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State (modifydata1985.csv):ok]' type='color' />
+            <card pane-specification-id='0' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{21118E99-A47D-42B0-B1E2-0411B458913D}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[none:State (modifydata2015.csv):ok]' type='color' />
+            <card pane-specification-id='0' param='[federated.0v8xarr1trszq712w3zk50iqjprk].[sum:percentage (modifydata2015.csv):qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DFEFA7AE-A158-480E-9678-B925953FDB6B}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5' />
+        <viewpoint name='Sheet 6' />
+      </viewpoints>
+      <active id='32' />
+      <simple-id uuid='{579B0A15-0A8C-4A01-BB86-C4F2F1A9D2A1}' />
+    </window>
+  </windows>
+</workbook>
